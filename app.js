@@ -1,12 +1,14 @@
+//Arrays Lab for Tristan Hall's Class - Just fyi: I'm commenting out all the answers as I go through 
+// so that I can console.log each subsequent exercise and not get an error message.
+
 /*
 Exercise 1: Define an empty array
 
 1) Create an empty array and assign it to a variable called `foods`.
 
-Exercise 1 has been completed for you:
+Exercise 1:
 */
 
-// EXERCISE 1 COMPLETED BELOW
 // const foods = [];
 // console.log('Exercise 1 result:', foods);
 
@@ -22,7 +24,6 @@ Note: 'pizza' should be the first item in the array, followed by 'cheeseburger'.
 Complete Exercise 2 in the space below:
 */
 
-//EXERCISE 2 COMPLETED BELOW
 // const foods = [];
 // foods.push('pizza');
 // foods.push('cheeseburger');
@@ -43,7 +44,6 @@ Exercise 3: Insert at the beginning
 Complete Exercise 3 in the space below:
 */
 
-// EXERCISE 3 COMPLETED BELOW
 // const foods = ['pizza', 'cheeseburger'];
 // foods.unshift('taco');
 // console.log('Exercise 3 result:', foods);
@@ -61,7 +61,6 @@ Exercise 4: Access an array element
 Complete Exercise 4 in the space below:
 */
 
-//EXERCISE 4 COMPLETED BELOW
 // const foods = ['taco','pizza', 'cheeseburger'];
 // const favFood = foods[1];
 // console.log('Exercise 4 result:', favFood);
@@ -84,7 +83,7 @@ Exercise 5: Insert an element between two others
 
 Complete Exercise 5 in the space below:
 */
-//EXERCISE 5 COMPLETED BELOW
+
 // const foods = ['taco','pizza', 'cheeseburger'];
 // foods.splice(2, 0, 'tofu');
 // console.log('Exercise 5 result:', foods);
@@ -98,7 +97,7 @@ Exercise 6: Replace elements
 
 Complete Exercise 6 in the space below:
 */
-//EXERCISE 6 COMPLETED BELOW
+
 // const foods = ['taco','pizza','tofu','cheeseburger'];
 // foods.splice(1, 1, 'sushi', 'cupcake');
 // console.log('Exercise 6 result:', foods);
@@ -115,7 +114,7 @@ Exercise 7: Using the `slice()` method
 
 Complete Exercise 7 in the space below:
 */
-// EXERCISE 7 COMPLETED BELOW
+
 // const foods = ['taco','sushi', 'cupcake','tofu','cheeseburger'];
 // const yummy = foods.slice(1, 3);
 // console.log('Exercise 7 result:', yummy);
@@ -132,7 +131,7 @@ Exercise 8: Finding an index
 
 Complete Exercise 8 in the space below:
 */
-// EXERCISE 8 COMPLETED BELOW (2 examples)
+
 // const foods = ['taco','sushi', 'cupcake','tofu','cheeseburger'];
 // const soyIdx = foods.indexOf('tofu');
 // console.log('Exercise 8 result:', soyIdx);
@@ -147,6 +146,7 @@ Complete Exercise 8 in the space below:
 // foods.splice(1,1, 'sushi', 'cupcake');
 // const yummy = foods.slice(1,3);
 // const soyIdx = foods.indexOf('tofu')
+// console.log('Exercise 8 result:', soyIdx);
 
 
 
@@ -163,6 +163,22 @@ Note: The final result should log as:
 
 Complete Exercise 9 in the space below:
 */
+// const foods = ['taco','sushi', 'cupcake','tofu','cheeseburger'];
+// let allFoods = foods.join(' -> ');
+// console.log('Exercise 9 result:', allFoods);
+
+
+
+/*
+Exercise 10: Check for an element
+
+1) Using the .includes() method, check if the `foods` array contains the string
+   'soup'.
+
+2) Assign the result to a variable called `hasSoup``.
+
+Complete Exercise 10 in the space below:
+*/
 const foods = ['taco','sushi', 'cupcake','tofu','cheeseburger'];
-let allFoods = foods.join(' -> ');
-console.log('Exercise 9 result:', allFoods);
+const hasSoup = foods.includes('soup');
+console.log('Exercise 10 result:', hasSoup);
