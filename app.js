@@ -164,7 +164,5 @@ Note: The final result should log as:
 Complete Exercise 9 in the space below:
 */
 const foods = ['taco','sushi', 'cupcake','tofu','cheeseburger'];
-
-
-
+let allFoods = foods.join(' -> ');
 console.log('Exercise 9 result:', allFoods);
