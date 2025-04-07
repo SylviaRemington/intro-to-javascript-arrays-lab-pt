@@ -202,6 +202,7 @@ Here's what the exercise is asking — in plain language:
 */
 
 //NEED TO WORK ON THIS
+// Use this code to find out if its an odd number. This is the simplest equation to use for odd numbers: % 2 !== 0
 // const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
 
 // for (let i = 0; i < nums.length; i++) {
