@@ -196,18 +196,48 @@ Hint: Initialize the `odds` variable to an empty array before the iteration.
 
 Complete Exercise 11 in the space below:
 */
+//NEED TO WORK ON THIS
+// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
 
-const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+// for (let i = 0; i < nums.length; i++) {
+//     console.log(nums[i]);
+//   }
 
-for (let i = 0; i < nums.length; i++) {
-    console.log(nums[i]);
-  }
+// console.log(i);
 
-console.log(i);
-
-const odds = [];
-let oddNumber = nums
-if ()
+// const odds = [];
+// let oddNumber = nums
+// if ()
   
+
+
+/*
+Exercise 13: Retrieve the Last Array
+
+1) Assign the last nested array in the `numArrays` below to a variable named
+   `numList`. As you do this, also fulfill these goals:
+
+   - Assume you don't know how many nested arrays `numArrays` contains.
+   - Do not alter the original `numArrays` array.
+
+Complete Exercise 13 in the space below:
+
+Explanation of exercise via chatgpt since I didn't understand what was being asked: Here's what the assignment is asking — in plain language:
+
+You are given a variable called numArrays. Inside it, there are multiple arrays — it's a nested array.
+You need to: 1. Get only the last array from numArrays. 
+2. Save that last array in a new variable called numList.
+3. You don’t know how many arrays are inside numArrays, so you can’t use a fixed number like numArrays[2].
+4. Don’t change the numArrays variable. Just read from it.
+*/
+
+const numArrays = [
+	[100, 5, 23],
+	[15, 21, 72, 9],
+	[45, 66],
+	[7, 81, 90]
+];
+
+console.log('Exercise 13 result:', numList);
 
 
