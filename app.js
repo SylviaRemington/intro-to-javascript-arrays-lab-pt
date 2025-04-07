@@ -202,14 +202,16 @@ Here's what the exercise is asking — in plain language:
 */
 
 //NEED TO WORK ON THIS
-// Use this code to find out if its an odd number. This is the simplest equation to use for odd numbers: % 2 !== 0
-// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+// Use this code to find out if its an odd number. 
+// This is the simplest equation to use for odd numbers: % 2 !== 0
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
 
-// for (let i = 0; i < nums.length; i++) {
-//     console.log(nums[i]);
-//   }
+for (let i = 0; i < nums.length; i++) {
+    const oddNumber = nums % 2 !== 0
+    console.log(nums[i]);
+  }
 
-// console.log(i);
+// console.log(nums);
 
 // const odds = [];
 // let oddNumber = nums
@@ -274,14 +276,14 @@ You need to: 1. Get only the last array from numArrays.
 4. Don’t change the numArrays variable. Just read from it.
 */
 
-const numArrays = [
-	[100, 5, 23],
-	[15, 21, 72, 9],
-	[45, 66],
-	[7, 81, 90]
-];
+// const numArrays = [
+// 	[100, 5, 23],
+// 	[15, 21, 72, 9],
+// 	[45, 66],
+// 	[7, 81, 90]
+// ];
 
-console.log('Exercise 13 result:', numList);
+// console.log('Exercise 13 result:', numList);
 
 
 
