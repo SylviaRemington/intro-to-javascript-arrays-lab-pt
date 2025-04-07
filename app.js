@@ -8,7 +8,7 @@ Exercise 1: Define an empty array
 
 Exercise 1:
 */
-
+//EXERCISE 1 - COMPLETED BELOW:
 // const foods = [];
 // console.log('Exercise 1 result:', foods);
 
@@ -23,7 +23,7 @@ Note: 'pizza' should be the first item in the array, followed by 'cheeseburger'.
 
 Complete Exercise 2 in the space below:
 */
-
+//EXERCISE 2 - COMPLETED BELOW:
 // const foods = [];
 // foods.push('pizza');
 // foods.push('cheeseburger');
@@ -43,7 +43,7 @@ Exercise 3: Insert at the beginning
 
 Complete Exercise 3 in the space below:
 */
-
+//EXERCISE 3 - COMPLETED BELOW:
 // const foods = ['pizza', 'cheeseburger'];
 // foods.unshift('taco');
 // console.log('Exercise 3 result:', foods);
@@ -60,7 +60,7 @@ Exercise 4: Access an array element
 
 Complete Exercise 4 in the space below:
 */
-
+//EXERCISE 4 - COMPLETED BELOW:
 // const foods = ['taco','pizza', 'cheeseburger'];
 // const favFood = foods[1];
 // console.log('Exercise 4 result:', favFood);
@@ -83,7 +83,7 @@ Exercise 5: Insert an element between two others
 
 Complete Exercise 5 in the space below:
 */
-
+//EXERCISE 5 - COMPLETED BELOW:
 // const foods = ['taco','pizza', 'cheeseburger'];
 // foods.splice(2, 0, 'tofu');
 // console.log('Exercise 5 result:', foods);
@@ -97,7 +97,7 @@ Exercise 6: Replace elements
 
 Complete Exercise 6 in the space below:
 */
-
+//EXERCISE 6 - COMPLETED BELOW:
 // const foods = ['taco','pizza','tofu','cheeseburger'];
 // foods.splice(1, 1, 'sushi', 'cupcake');
 // console.log('Exercise 6 result:', foods);
@@ -114,7 +114,7 @@ Exercise 7: Using the `slice()` method
 
 Complete Exercise 7 in the space below:
 */
-
+//EXERCISE 7 - COMPLETED BELOW:
 // const foods = ['taco','sushi', 'cupcake','tofu','cheeseburger'];
 // const yummy = foods.slice(1, 3);
 // console.log('Exercise 7 result:', yummy);
@@ -131,7 +131,7 @@ Exercise 8: Finding an index
 
 Complete Exercise 8 in the space below:
 */
-
+//EXERCISE 8 - COMPLETED BELOW:
 // const foods = ['taco','sushi', 'cupcake','tofu','cheeseburger'];
 // const soyIdx = foods.indexOf('tofu');
 // console.log('Exercise 8 result:', soyIdx);
@@ -163,6 +163,7 @@ Note: The final result should log as:
 
 Complete Exercise 9 in the space below:
 */
+//EXERCISE 9 - COMPLETED BELOW:
 // const foods = ['taco','sushi', 'cupcake','tofu','cheeseburger'];
 // let allFoods = foods.join(' -> ');
 // console.log('Exercise 9 result:', allFoods);
@@ -202,19 +203,19 @@ Here's what the exercise is asking — in plain language:
 5. Before the loop starts, you need to create the odds array — and make sure it starts out empty.
 */
 
+//EXERCISE 11 - COMPLETED BELOW:
 // Use this code to find out if its an odd number. This is the simplest equation to use for odd numbers: % 2 !== 0
-const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
-const odds = [];
+// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+// const odds = [];
 
-for (let i = 0; i < nums.length; i++) {
-    const oddNumber = nums[i] % 2 !== 0
-    // console.log(nums[i]);//just printing every number in array so taking that out
-    if (oddNumber){
-        odds.push(nums[i]);
-    }
-  }
-
-console.log(odds);
+// for (let i = 0; i < nums.length; i++) {
+//     const oddNumber = nums[i] % 2 !== 0
+//     // console.log(nums[i]);//just printing every number in array so taking that out
+//     if (oddNumber){
+//         odds.push(nums[i]);
+//     }
+//   }
+// console.log(odds);
 
 //What I did for the above code:
 // Loops through every number in the nums array.
@@ -253,10 +254,11 @@ Some numbers might be added to more than one array — that’s okay and expecte
 In the end, you will have three arrays: fizz, buzz, and fizzbuzz, each holding different sets of numbers.
 */
 
-// console.log('Exercise 12 Results:');
-// console.log('  fizz:', fizz);
-// console.log('  buzz:', buzz);
-// console.log('  fizzbuzz:', fizzbuzz);
+
+console.log('Exercise 12 Results:');
+console.log('  fizz:', fizz);
+console.log('  buzz:', buzz);
+console.log('  fizzbuzz:', fizzbuzz);
 
 //--------------------------------------------------------------------------
 
@@ -272,23 +274,24 @@ Exercise 13: Retrieve the Last Array
 Complete Exercise 13 in the space below:
 
 Explanation of exercise via chatgpt since I didn't understand what was being asked: Here's what the assignment is asking — in plain language:
-
 You are given a variable called numArrays. Inside it, there are multiple arrays — it's a nested array.
 LOOK AT/REVIEW THE "TWO-DIMENSIONAL ARRAYS SECTION ABOVE THIS QUESTION."
 You need to: 1. Get only the last array from numArrays. 
 2. Save that last array in a new variable called numList.
 3. You don’t know how many arrays are inside numArrays, so you can’t use a fixed number like numArrays[2].
-4. Don’t change the numArrays variable. Just read from it.
+4. Don’t change the numArrays variable. 
 */
 
-// const numArrays = [
-// 	[100, 5, 23],
-// 	[15, 21, 72, 9],
-// 	[45, 66],
-// 	[7, 81, 90]
-// ];
+const numArrays = [
+	[100, 5, 23],
+	[15, 21, 72, 9],
+	[45, 66],
+	[7, 81, 90]
+];
 
-// console.log('Exercise 13 result:', numList);
+const numList = [];
+
+console.log('Exercise 13 result:', numList);
 
 //--------------------------------------------------------------------------
 
@@ -312,7 +315,7 @@ Then print num to show the result.
 
 
 
-// console.log('Exercise 14 result:', num);
+console.log('Exercise 14 result:', num);
 
 
 //--------------------------------------------------------------------------
@@ -344,4 +347,4 @@ Show the result by printing total.
 
 
 
-// console.log('Exercise 15 result:\n', total);
+console.log('Exercise 15 result:\n', total);
