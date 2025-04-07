@@ -12,7 +12,7 @@ Exercise 1:
 // const foods = [];
 // console.log('Exercise 1 result:', foods);
 
-
+//----------------------------------------------------------------------------
 
 /*
 Exercise 2: Add strings to the array
@@ -34,7 +34,7 @@ Complete Exercise 2 in the space below:
 // const foods = ['pizza', 'cheeseburger'];
 // console.log('Exercise 2 result:', foods);
 
-
+//------------------------------------------------------------------------
 
 /*
 Exercise 3: Insert at the beginning
@@ -48,7 +48,7 @@ Complete Exercise 3 in the space below:
 // foods.unshift('taco');
 // console.log('Exercise 3 result:', foods);
 
-
+//--------------------------------------------------------------------------
 
 /*
 Exercise 4: Access an array element
@@ -74,7 +74,7 @@ Complete Exercise 4 in the space below:
 // const favFood = foods[1];
 // console.log('Exercise 4 result:', favFood);
 
-
+//--------------------------------------------------------------------------
 
 /*
 Exercise 5: Insert an element between two others
@@ -88,7 +88,7 @@ Complete Exercise 5 in the space below:
 // foods.splice(2, 0, 'tofu');
 // console.log('Exercise 5 result:', foods);
 
-
+//--------------------------------------------------------------------------
 
 /*
 Exercise 6: Replace elements
@@ -102,7 +102,7 @@ Complete Exercise 6 in the space below:
 // foods.splice(1, 1, 'sushi', 'cupcake');
 // console.log('Exercise 6 result:', foods);
 
-
+//--------------------------------------------------------------------------
 
 /*
 Exercise 7: Using the `slice()` method
@@ -119,7 +119,7 @@ Complete Exercise 7 in the space below:
 // const yummy = foods.slice(1, 3);
 // console.log('Exercise 7 result:', yummy);
 
-
+//--------------------------------------------------------------------------
 
 /*
 Exercise 8: Finding an index
@@ -148,7 +148,7 @@ Complete Exercise 8 in the space below:
 // const soyIdx = foods.indexOf('tofu')
 // console.log('Exercise 8 result:', soyIdx);
 
-
+//--------------------------------------------------------------------------
 
 /*
 Exercise 9: Joining elements
@@ -167,7 +167,7 @@ Complete Exercise 9 in the space below:
 // let allFoods = foods.join(' -> ');
 // console.log('Exercise 9 result:', allFoods);
 
-
+//--------------------------------------------------------------------------
 
 /*
 Exercise 10: Check for an element
@@ -205,19 +205,48 @@ Here's what the exercise is asking — in plain language:
 // Use this code to find out if its an odd number. 
 // This is the simplest equation to use for odd numbers: % 2 !== 0
 const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+const odds = [];
 
 for (let i = 0; i < nums.length; i++) {
-    const oddNumber = nums % 2 !== 0
-    console.log(nums[i]);
+    const oddNumber = nums[i] % 2 !== 0
+    // console.log(nums[i]);//just printing every number in array so taking that out
+    if (oddNumber){
+        odds.push(nums[i]);
+    }
   }
 
-// console.log(nums);
+console.log(odds);
 
+//What I did for the above code:
+// What my code does:
+// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+// const odds = [];
+
+// for (let i = 0; i < nums.length; i++) {
+//     const oddNumber = nums[i] % 2 !== 0;
+//     if (oddNumber) {
+//         odds.push(nums[i]);
+//     }
+// }
+// console.log(odds);
+
+// Loops through every number in the nums array.
+
+// Checks if the number is odd (% 2 !== 0).
+
+// If it's odd, adds it to the odds array.
+
+// Finally, prints the list of all odd numbers.
+
+// utput will be:
+// [5, 23, 15, 21, 9, 45, 7, 81]
+
+//This below is just me trying to figure stuff out
 // const odds = [];
 // let oddNumber = nums
 // if ()
   
-
+//--------------------------------------------------------------------------
 
 /*
 Exercise 12: FizzBuzz with arrays
@@ -253,7 +282,7 @@ In the end, you will have three arrays: fizz, buzz, and fizzbuzz, each holding d
 // console.log('  buzz:', buzz);
 // console.log('  fizzbuzz:', fizzbuzz);
 
-
+//--------------------------------------------------------------------------
 
 /*
 Exercise 13: Retrieve the Last Array
@@ -285,7 +314,7 @@ You need to: 1. Get only the last array from numArrays.
 
 // console.log('Exercise 13 result:', numList);
 
-
+//--------------------------------------------------------------------------
 
 /*
 Exercise 14: Accessing within nested arrays
@@ -310,7 +339,7 @@ Then print num to show the result.
 // console.log('Exercise 14 result:', num);
 
 
-
+//--------------------------------------------------------------------------
 
 /*
 Exercise 15: Nested array sum
