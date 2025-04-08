@@ -210,7 +210,7 @@ Here's what the exercise is asking — in plain language:
 
 // for (let i = 0; i < nums.length; i++) {
 //     const oddNumber = nums[i] % 2 !== 0
-//     // console.log(nums[i]);//just printing every number in array so taking that out
+    // console.log(nums[i]);//just printing every number in array so taking that out
 //     if (oddNumber){
 //         odds.push(nums[i]);
 //     }
@@ -253,6 +253,26 @@ If the number can be divided by both 3 and 5, also add it to a third array calle
 Some numbers might be added to more than one array — that’s okay and expected.
 In the end, you will have three arrays: fizz, buzz, and fizzbuzz, each holding different sets of numbers.
 */
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+const fizz = [];
+const buzz = [];
+const fizzbuzz = [];
+
+for (let i=0; i<nums.length; i++) {
+    const divThree = 
+    const divFive = 
+    const divThreeFive = 
+    
+    if (i === divThree) {
+
+    } else if (i === divFive){
+
+    } else if (i === divThree && divFive){
+
+    }else{
+        
+    }
+}
 
 
 console.log('Exercise 12 Results:');
@@ -282,16 +302,16 @@ You need to: 1. Get only the last array from numArrays.
 4. Don’t change the numArrays variable. 
 */
 
-const numArrays = [
-	[100, 5, 23],
-	[15, 21, 72, 9],
-	[45, 66],
-	[7, 81, 90]
-];
+// const numArrays = [
+// 	[100, 5, 23],
+// 	[15, 21, 72, 9],
+// 	[45, 66],
+// 	[7, 81, 90]
+// ];
 
-const numList = [];
+// const numList = [];
 
-console.log('Exercise 13 result:', numList);
+// console.log('Exercise 13 result:', numList);
 
 //--------------------------------------------------------------------------
 
@@ -315,7 +335,7 @@ Then print num to show the result.
 
 
 
-console.log('Exercise 14 result:', num);
+// console.log('Exercise 14 result:', num);
 
 
 //--------------------------------------------------------------------------
@@ -325,26 +345,18 @@ Exercise 15: Nested array sum
 
 1) Use nested loops or `forEach()` methods to sum up all numbers within 
    `numArrays` nested arrays.
-   
 2) Assign the sum to a variable called `total`.
-
 Hint: Be sure to declare and initialize the total variable before the iterations.
-
 Complete Exercise 15 in the space below:
 
 Here’s what the exercise is asking — in plain language:
-
 You’re given a variable called numArrays. It’s an array that contains other arrays (a nested array), and those inner arrays have numbers in them.
-
 You need to go through all the numbers inside all the inner arrays.
-
 Add every number together to get one total.
-
 Save that total in a variable called total.
-
 Show the result by printing total.
-*/
+.flat (method?)*/
 
 
 
-console.log('Exercise 15 result:\n', total);
+// console.log('Exercise 15 result:\n', total);
