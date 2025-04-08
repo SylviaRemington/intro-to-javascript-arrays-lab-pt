@@ -255,51 +255,51 @@ In the end, you will have three arrays: fizz, buzz, and fizzbuzz, each holding d
 */
 
 //EXERCISE 12 - COMPLETED BELOW:
-const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90,1];
-const fizz = []; //If the number can be divided by 3 with no remainder, add it to a new array called fizz.
-const buzz = []; //If the number can be divided by 5 with no remainder, add it to a new array called buzz.
-const fizzbuzz = []; //If the number can be divided by both 3 and 5, also add it to a third array called fizzbuzz.
+// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90,1];
+// const fizz = []; //If the number can be divided by 3 with no remainder, add it to a new array called fizz.
+// const buzz = []; //If the number can be divided by 5 with no remainder, add it to a new array called buzz.
+// const fizzbuzz = []; //If the number can be divided by both 3 and 5, also add it to a third array called fizzbuzz.
 
-for (let i=0; i<nums.length; i++) {
-    const num = nums [i];
-    const divThree = num % 3 === 0;
-    const divFive = num % 5 === 0;
-    const divThreeFive = num % 3 === 0 && num % 5 === 0;
-    // num % 3 == 0 is the operator used for dividing with no remainder
+// for (let i=0; i<nums.length; i++) {
+//     const num = nums [i];
+//     const divThree = num % 3 === 0;
+//     const divFive = num % 5 === 0;
+//     const divThreeFive = num % 3 === 0 && num % 5 === 0;
+//     // num % 3 == 0 is the operator used for dividing with no remainder
 
-    // console.log('divThree', divThree);
-    // console.log('divFive', divFive);
-    // console.log(divThreeFive, 'divThreeFive');
+//     // console.log('divThree', divThree);
+//     // console.log('divFive', divFive);
+//     // console.log(divThreeFive, 'divThreeFive');
 
-    if (divThreeFive){
-        fizz.push(num);
-        buzz.push(num);
-        fizzbuzz.push(num);
-    }else if(divThree){
-        fizz.push(num);
-    }else if(divFive){
-        buzz.push(num);
-    }else{
-        console.log(`Number ${nums[i]} is invalid for these search parameters. Pick a new number. Try again... or game over! ;)`);
-    }
-    
-        // Below is my first attempt at if... else / Found out that it works best if divThreeFive first and use the most/more specific variable first
-//     if (i === divThree) {
+//     if (divThreeFive){
 //         fizz.push(num);
-//     } else if (i === divFive){
 //         buzz.push(num);
-//     } else if (i === divThree && divFive){
+//         fizzbuzz.push(num);
+//     }else if(divThree){
 //         fizz.push(num);
+//     }else if(divFive){
 //         buzz.push(num);
 //     }else{
-//         console.log("No number will be added to these arrays.")
+//         console.log(`Number ${nums[i]} is invalid for these search parameters. Pick a new number. Try again... or game over! ;)`);
 //     }
-}
+    
+//         // Below is my first attempt at if... else / Found out that it works best if divThreeFive first and use the most/more specific variable first
+// //     if (i === divThree) {
+// //         fizz.push(num);
+// //     } else if (i === divFive){
+// //         buzz.push(num);
+// //     } else if (i === divThree && divFive){
+// //         fizz.push(num);
+// //         buzz.push(num);
+// //     }else{
+// //         console.log("No number will be added to these arrays.")
+// //     }
+// }
 
-console.log('Exercise 12 Results:');
-console.log('  fizz:', fizz);
-console.log('  buzz:', buzz);
-console.log('  fizzbuzz:', fizzbuzz);
+// console.log('Exercise 12 Results:');
+// console.log('  fizz:', fizz);
+// console.log('  buzz:', buzz);
+// console.log('  fizzbuzz:', fizzbuzz);
 
 //--------------------------------------------------------------------------
 
@@ -323,6 +323,17 @@ You need to: 1. Get only the last array from numArrays.
 4. Don’t change the numArrays variable. 
 */
 
+//First Attempt at question 13
+// const numArrays = [
+// 	[100, 5, 23],
+// 	[15, 21, 72, 9],
+// 	[45, 66],
+// 	[7, 81, 90]
+// ];
+// const numList = numArrays.length-1[numArrays.length-1];
+// console.log('Exercise 13 result:', numList);
+
+//EXERCISE 13 - COMPLETED BELOW:
 // const numArrays = [
 // 	[100, 5, 23],
 // 	[15, 21, 72, 9],
@@ -330,7 +341,7 @@ You need to: 1. Get only the last array from numArrays.
 // 	[7, 81, 90]
 // ];
 
-// const numList = [];
+// const numList = numArrays[numArrays.length-1];
 
 // console.log('Exercise 13 result:', numList);
 
@@ -354,7 +365,15 @@ Save that number in a new variable called num.
 Then print num to show the result.
 */
 
+// EXERCISE 14 - COMPLETED BELOW:
+// const numArrays = [
+// 	[100, 5, 23],
+// 	[15, 21, 72, 9],
+// 	[45, 66],
+// 	[7, 81, 90]
+// ];
 
+// const num = numArrays[2][1]
 
 // console.log('Exercise 14 result:', num);
 
@@ -378,6 +397,55 @@ Save that total in a variable called total.
 Show the result by printing total.
 .flat (method?)*/
 
+//beginning first attempt... gah... my brain doesn't get what to do with this one. I'm googling a lot. lol 
+// (This is my inner monologue... I won't use this so much in future exercises.)
+// const numArrays = [
+// 	[100, 5, 23],
+// 	[15, 21, 72, 9],
+// 	[45, 66],
+// 	[7, 81, 90]
+// ];
 
+// numArrays.forEach((num) => {
+//     num + num;
+// })
+
+// const total = sum
 
 // console.log('Exercise 15 result:\n', total);
+
+// EXERCISE 15 - COMPLETED BELOW:
+const numArrays = [ //This creates a numArray variable, that is a nested Array. Each array has numbers I will add together.
+	[100, 5, 23],
+	[15, 21, 72, 9],
+	[45, 66],
+	[7, 81, 90]
+];
+
+let total = 0 //Starting number, starting with a total of 0, this holds the final sum, and let allows number to change
+//This keeps track of the total sum as adding it (I think?).
+
+numArrays.forEach(function(individualArray) {
+    individualArray.forEach(function(num) {
+      total += num;
+    });
+});
+//Notes for me for what this particular forEach loop does:
+//above begins a forEach loop - It's saying "For each item in the numArrays, do the following..."
+//The first loop, loops through numArrays of index 0, 1,...
+//Since each item/index is an array-within-an-array, calling it individualArray.
+//There is a second loop within the first loop... This loop loops through individual array.
+//After all this, total += num; //adds the current number to the total. 
+// += means take the current total, add num to it and save the new value in total.
+
+    // arr.forEach(individualArray => {
+    //     individualArray.forEach(num => {
+    //       total += num;
+    //     });
+    //   });
+    
+    // };
+
+
+
+console.log('Exercise 15 result:\n', total);
