@@ -253,27 +253,48 @@ If the number can be divided by both 3 and 5, also add it to a third array calle
 Some numbers might be added to more than one array — that’s okay and expected.
 In the end, you will have three arrays: fizz, buzz, and fizzbuzz, each holding different sets of numbers.
 */
-const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
-const fizz = [];
-const buzz = [];
-const fizzbuzz = [];
+
+//EXERCISE 12 - COMPLETED BELOW:
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90,1];
+const fizz = []; //If the number can be divided by 3 with no remainder, add it to a new array called fizz.
+const buzz = []; //If the number can be divided by 5 with no remainder, add it to a new array called buzz.
+const fizzbuzz = []; //If the number can be divided by both 3 and 5, also add it to a third array called fizzbuzz.
 
 for (let i=0; i<nums.length; i++) {
-    const divThree = 
-    const divFive = 
-    const divThreeFive = 
-    
-    if (i === divThree) {
+    const num = nums [i];
+    const divThree = num % 3 === 0;
+    const divFive = num % 5 === 0;
+    const divThreeFive = num % 3 === 0 && num % 5 === 0;
+    // num % 3 == 0 is the operator used for dividing with no remainder
 
-    } else if (i === divFive){
+    // console.log('divThree', divThree);
+    // console.log('divFive', divFive);
+    // console.log(divThreeFive, 'divThreeFive');
 
-    } else if (i === divThree && divFive){
-
+    if (divThreeFive){
+        fizz.push(num);
+        buzz.push(num);
+        fizzbuzz.push(num);
+    }else if(divThree){
+        fizz.push(num);
+    }else if(divFive){
+        buzz.push(num);
     }else{
-        
+        console.log(`Number ${nums[i]} is invalid for these search parameters. Pick a new number. Try again... or game over! ;)`);
     }
+    
+        // Below is my first attempt at if... else / Found out that it works best if divThreeFive first and use the most/more specific variable first
+//     if (i === divThree) {
+//         fizz.push(num);
+//     } else if (i === divFive){
+//         buzz.push(num);
+//     } else if (i === divThree && divFive){
+//         fizz.push(num);
+//         buzz.push(num);
+//     }else{
+//         console.log("No number will be added to these arrays.")
+//     }
 }
-
 
 console.log('Exercise 12 Results:');
 console.log('  fizz:', fizz);
