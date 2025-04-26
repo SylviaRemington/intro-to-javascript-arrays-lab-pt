@@ -96,9 +96,30 @@ Exercise 5: Insert an element between two others
 Complete Exercise 5 in the space below:
 */
 //EXERCISE 5 - COMPLETED BELOW:
-// const foods = ['taco','pizza', 'cheeseburger'];
-// foods.splice(2, 0, 'tofu');
-// console.log('Exercise 5 result:', foods);
+const foods = ['taco','pizza', 'cheeseburger'];
+foods.splice(2, 0, 'tofu');
+console.log('Exercise 5 result:', foods);
+
+// More info on the splice () method:
+// The splice() method can add or remove any number of elements inside an array. 
+// You can even take both actions simultaneously with a single line of code!
+
+// splice(start)
+// splice(start, deleteCount)
+// splice(start, deleteCount, item0)
+// splice(start, deleteCount, item0, item1)
+// splice(start, deleteCount, item0, item1, /* …, */ itemN)
+
+// This syntax may seem overwhelming at first glance, 
+// but it means that all but the first parameter is optional - 
+// so when we call splice(), its behavior will change depending on how many 
+// arguments we pass to it.
+
+//SPLICE SYNTAX
+// arrayName.splice(2, 0, 'tofu');
+//the 2 position --> WHAT INDEX TO START AT & you will be putting new item before this index#
+//the 0 position --> HOW MANY ELEMENTS TO REMOVE
+//the 'tofu' position --> WHAT YOU'RE PUTTING IN THE ARRAY, item1, item2...etc.
 
 //--------------------------------------------------------------------------
 
