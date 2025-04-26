@@ -1,6 +1,7 @@
 //Arrays Lab for Tristan Hall's Class - Just fyi: I'm commenting out all the answers as I go through 
 // so that I can console.log each subsequent exercise and not get an error message.
 //Re-reviewing this section 4/25/25
+//Re-went through entire lesson again including Level Up and Reviewing Arrays Lab 4/25/25
 
 /*
 Exercise 1: Define an empty array
