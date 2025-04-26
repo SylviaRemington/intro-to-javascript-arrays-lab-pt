@@ -217,6 +217,7 @@ Complete Exercise 8 in the space below:
 // The indexOf() method searches for a specified element within an array 
 // and returns the index of the first occurrence. If the element is not found, 
 // it returns -1. Here are the docs.
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
 
 //--------------------------------------------------------------------------
 
@@ -242,7 +243,7 @@ Complete Exercise 9 in the space below:
 
 /*
 Exercise 10: Check for an element
-
+ 
 1) Using the .includes() method, check if the `foods` array contains the string
    'soup'.
 
@@ -254,6 +255,11 @@ Complete Exercise 10 in the space below:
 // const foods = ['taco','sushi', 'cupcake','tofu','cheeseburger'];
 // const hasSoup = foods.includes('soup');
 // console.log('Exercise 10 result:', hasSoup);
+
+// More info on includes method:
+// The includes() method checks if an array contains a specific element, 
+// returning a boolean value (true or false). Read more about the includes() method here.
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
 
 //--------------------------------------------------------------------------------------------------------------
 
