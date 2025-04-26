@@ -50,9 +50,9 @@ Exercise 3: Insert at the beginning
 Complete Exercise 3 in the space below:
 */
 //EXERCISE 3 - COMPLETED BELOW:
-// const foods = ['pizza', 'cheeseburger'];
-// foods.unshift('taco');
-// console.log('Exercise 3 result:', foods);
+const foods = ['pizza', 'cheeseburger'];
+foods.unshift('taco');
+console.log('Exercise 3 result:', foods);
 
 //--------------------------------------------------------------------------
 
