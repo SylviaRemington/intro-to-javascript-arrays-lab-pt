@@ -213,6 +213,11 @@ Complete Exercise 8 in the space below:
 // const soyIdx = foods.indexOf('tofu')
 // console.log('Exercise 8 result:', soyIdx);
 
+// More info about indexOf () method:
+// The indexOf() method searches for a specified element within an array 
+// and returns the index of the first occurrence. If the element is not found, 
+// it returns -1. Here are the docs.
+
 //--------------------------------------------------------------------------
 
 /*
