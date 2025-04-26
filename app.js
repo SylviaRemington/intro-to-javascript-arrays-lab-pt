@@ -50,17 +50,23 @@ Exercise 3: Insert at the beginning
 Complete Exercise 3 in the space below:
 */
 //EXERCISE 3 - COMPLETED BELOW:
-const foods = ['pizza', 'cheeseburger'];
-foods.unshift('taco');
-console.log('Exercise 3 result:', foods);
+// const foods = ['pizza', 'cheeseburger'];
+// foods.unshift('taco');
+// console.log('Exercise 3 result:', foods);
 
 //--------------------------------------------------------------------------
 
 /*
 Exercise 4: Access an array element
 
+
 1) Retrieve the 'pizza' string from the array based on its position (index) in
    the array.  
+
+   If I was just doing this one line (the #1 section), the code would be this:
+   const foods = ['taco', 'pizza', 'cheeseburger'];
+   foods[1];
+
 
 2) Assign it to a variable called `favFood`.
 
