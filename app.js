@@ -291,6 +291,8 @@ arr.forEach((element) => {
 Choose one to practice with for the following exercises!
 */
 
+//--------------------------------------------------------------------------------------------------------------
+
 /*
 Exercise 11: Odd numbers from an array
 
