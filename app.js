@@ -352,6 +352,16 @@ Here's what the exercise is asking — in plain language:
 // Checks if the number is odd (% 2 !== 0).
 // If it's odd, adds it to the odds array.
 // Finally, prints the list of all odd numbers.
+
+// This is the code for Exercise 11 all in one place:
+// for (let i = 0; i < nums.length; i++) {
+//        const oddNumber = nums[i] % 2 !== 0
+//        console.log(nums[i]);//just printing every number in array so taking that out
+//        if (oddNumber){
+//            odds.push(nums[i]);
+//        }
+//      }
+//    console.log(odds);
   
 //--------------------------------------------------------------------------
 
