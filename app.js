@@ -96,9 +96,9 @@ Exercise 5: Insert an element between two others
 Complete Exercise 5 in the space below:
 */
 //EXERCISE 5 - COMPLETED BELOW:
-const foods = ['taco','pizza', 'cheeseburger'];
-foods.splice(2, 0, 'tofu');
-console.log('Exercise 5 result:', foods);
+// const foods = ['taco','pizza', 'cheeseburger'];
+// foods.splice(2, 0, 'tofu');
+// console.log('Exercise 5 result:', foods);
 
 // More info on the splice () method:
 // The splice() method can add or remove any number of elements inside an array. 
@@ -151,6 +151,8 @@ Complete Exercise 7 in the space below:
 // const foods = ['taco','sushi', 'cupcake','tofu','cheeseburger'];
 // const yummy = foods.slice(1, 3);
 // console.log('Exercise 7 result:', yummy);
+
+// More on the slice () method:
 
 //--------------------------------------------------------------------------
 
