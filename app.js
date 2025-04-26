@@ -156,6 +156,33 @@ Complete Exercise 7 in the space below:
 // console.log('Exercise 7 result:', yummy);
 
 // More on the slice () method:
+//When think of slice, think COPY PART OF THE ARRAY.
+//It doesn't cahnge the original array.
+//You give it a start and end index, and it returns a new array with those elements.
+//The end index is not included.
+//Examples:
+
+//An example from chatgpt that I looked up after finishing this assignment for further understanding
+// const colors = ['red', 'blue', 'green', 'yellow'];
+// const coolColors = colors.slice(1, 3);
+// console.log(coolColors); 
+// console.log(colors);
+// ✅ coolColors will be:
+// ['blue', 'green']
+// ✅ colors stays:
+// ['red', 'blue', 'green', 'yellow']
+
+//If you want to cut out 'die hard' from the array, you have to use splice.
+
+// But to copy it...:
+const movies = ['matrix', 'die hard', 'terminator'];
+// const middleChunk = movies.slice(1,2);//copies die hard into a new array, but does not remove from movies
+// const middleChunk = movies.slice(1,1);//because start and stop are the same, there is nothing to copy
+// const middleChunk = movies.splice(1,1);
+// console.log(middleChunk);
+// console.log(typeof middleChunk);
+// console.log(movies);
+// console.log(typeof movies);
 
 //--------------------------------------------------------------------------
 
