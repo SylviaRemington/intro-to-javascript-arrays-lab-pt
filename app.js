@@ -31,8 +31,12 @@ Complete Exercise 2 in the space below:
 // foods.push('cheeseburger');
 // console.log('Exercise 2 result:', foods);
 
-//or could just type it out like below
+//or could do this: 
+// const foods = [];
+// foods.push('pizza', 'cheeseburger');
+// console.log('Exercise 2 result:', foods);
 
+//or could just type it out like below
 // const foods = ['pizza', 'cheeseburger'];
 // console.log('Exercise 2 result:', foods);
 
