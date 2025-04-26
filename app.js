@@ -175,7 +175,7 @@ Complete Exercise 7 in the space below:
 //If you want to cut out 'die hard' from the array, you have to use splice.
 
 // But to copy it...:
-const movies = ['matrix', 'die hard', 'terminator'];
+// const movies = ['matrix', 'die hard', 'terminator'];
 // const middleChunk = movies.slice(1,2);//copies die hard into a new array, but does not remove from movies
 // const middleChunk = movies.slice(1,1);//because start and stop are the same, there is nothing to copy
 // const middleChunk = movies.splice(1,1);
