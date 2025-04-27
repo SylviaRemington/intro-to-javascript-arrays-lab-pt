@@ -316,20 +316,15 @@ Here's what the exercise is asking — in plain language:
 
 // for (let i = 0; i < nums.length; i++) {
    // ✅ Start a loop:
-
    // i begins at 0.
-   
    // Loop continues as long as i is less than nums.length (the number of items in nums).
-   
    // Each time the loop runs, i goes up by 1.
 
-//     const oddNumber = nums[i] % 2 !== 0 //This is an equation I looked up online to check if something is odd
+//    const oddNumber = nums[i] % 2 !== 0 //This is an equation I looked up online to check if something is odd
+
 // ✅ Check if the current number is odd:
-
 // nums[i] means "the number at index i."
-
 // % 2 means "divide by 2 and get the remainder."
-
 // If the remainder is not 0, the number is odd.
 
 // Save true or false into oddNumber.
@@ -337,15 +332,12 @@ Here's what the exercise is asking — in plain language:
     //print each number one by one.
 //     if (oddNumber){
 //         odds.push(nums[i]);
-// ✅ If the number is odd (oddNumber === true):
-
-// Push (add) that number into the odds array.
 //     }
 //   }
-// console.log(odds);
-// ✅ After the loop is done:
+// ✅ If the number is odd (oddNumber === true): Push (add) that number into the odds array.
 
-// Print the final odds array showing all the odd numbers you found.
+// console.log(odds);
+// ✅ After the loop is done: Print the final odds array showing all the odd numbers you found.
 
 //What I did for the above code:
 // Loops through every number in the nums array.
