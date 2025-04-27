@@ -416,11 +416,8 @@ In the end, you will have three arrays: fizz, buzz, and fizzbuzz, each holding d
 ✅ This checks if num divides evenly by 3.
 % is the modulus operator → it gives you the remainder after division.
 num % 3 == 0 means: if dividing num by 3 leaves no remainder (meaning it divides perfectly).
-
 Example:
-
 9 % 3 == 0 → true (9 ÷ 3 = 3, remainder 0)
-
 10 % 3 == 0 → false (10 ÷ 3 = 3 remainder 1)
 
 
