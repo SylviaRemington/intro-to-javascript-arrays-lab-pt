@@ -705,10 +705,9 @@ Show the result by printing total.
 // numArrays.forEach((num) => {
 //     num + num;
 // })
-
 // const total = sum
-
 // console.log('Exercise 15 result:\n', total);
+
 
 // EXERCISE 15 - COMPLETED BELOW:
 const numArrays = [ //This creates a numArray variable, that is a nested Array. Each array has numbers I will add together.
@@ -735,13 +734,247 @@ numArrays.forEach(function(individualArray) {
 // += means take the current total, add num to it and save the new value in total.
 
     // arr.forEach(individualArray => {
-    //     individualArray.forEach(num => {
+    //     individualArray.forEach(num) => {
     //       total += num;
     //     });
     //   });
     
     // };
 
+console.log('Exercise 15 result:\n', total);
 
+
+/*Double checking my work with chatgpt and asking if correct. This is its answer:
+
+const numArrays = [ ... ];
+You set up the nested arrays.
+
+let total = 0;
+You create a total variable.
+It starts at 0 because you're going to add numbers into it.
+
+numArrays.forEach(function(individualArray) {
+You go through each inner array one by one (ex: [100, 5, 23], then [15, 21, 72, 9], etc).
+individualArray is a name you gave for each inner array.
+//my notes: Creating a function and have individualArray as a parameter.
+//individualArray is just a parameter.
+//(a placeholder name for each item you loop over)
+//Meaning:
+//numArrays has 4 inner arrays.
+//forEach gives each inner array, one at a time, to your function.
+//individualArray represents each inner array during that one loop.
+
+
+    individualArray.forEach(function(num) {
+Now inside each inner array, you go through each number one by one.
+
+      total += num;
+You add each number to the total.
+
+total += num; means total = total + num.
+
+});
+});
+You close both forEach loops properly.
+
+When you console.log(total), it will correctly show the full sum of all numbers. 🎯
+
+Small notes:
+
+Your first attempt (before the EXERCISE 15 - COMPLETED section) was close too — you just needed to update the total inside the loop and fix the order of creating variables.
+.flat() could also solve this differently (would you like me to show that too as a bonus method? It's very cool and short!). 🔥
+
+*/
+
+
+/*
+TO FIX FIRST ATTEMPT - ideas given 4/27/25 way after I completed the assignment so that I can have further awareness & clarity with arrays:
+(THESE WERE SUGGESTIONS FROM CHATGPT THAT I'M PUTTING IN AFTER FINISHED ASSIGNMENT FOR FURTHER AWARENESS.)
+
+Could you show me how I could have fixed this: Your first attempt (before the EXERCISE 15 - COMPLETED section) was close too — you just needed to update the total inside the loop and fix the order of creating variables.
+.flat() could also solve this differently (would you like me to show that too as a bonus method? It's very cool and short!). 🔥
+
+ChatGPT said:
+Yes! Let’s fix your first attempt — the one you wrote here:
+
+Your first version:
+// wrong
+numArrays.forEach((num) => {
+    num + num;
+});
+const total = sum;
+console.log('Exercise 15 result:\n', total);
+
+Why it didn’t work:
+You did num + num;, but did not actually add it to anything.
+sum was never created before using it.
+total = sum — but sum doesn't exist yet. (error)
+
+✅ How to fix it properly:
+
+let total = 0; // Create the total FIRST
+
+numArrays.forEach(function(innerArray) {
+  innerArray.forEach(function(num) {
+    total += num; // Add each number to total
+  });
+});
+
+console.log('Exercise 15 result:', total);
+Changes you needed:
+
+Create total = 0 before the loops.
+Use total += num; inside the loops.
+Don't try to create another sum variable randomly — just update total directly.
+
+✅ Extra tip:
+In your original attempt, you were also accidentally trying to loop through numArrays directly, but you need to go into each inner array first.
+Would you like me to also show the absolute minimum fix (keeping your exact style and fixing just the errors)? 🎯 (it would show how little you needed to actually change!)
+
+You said:
+YES
+
+ChatGPT said:
+Awesome — here’s your original attempt, minimally fixed, keeping your style as much as possible:
+
+🔵 Your original (broken) version:
+
+numArrays.forEach((num) => {
+    num + num;
+});
+const total = sum;
+console.log('Exercise 15 result:\n', total);
+
+🔵 Minimally fixed version:
+let total = 0; // You need to create total first!
+numArrays.forEach((innerArray) => {
+    innerArray.forEach((num) => {
+        total += num;
+    });
+});
+console.log('Exercise 15 result:\n', total);
+
+✅ Here’s exactly what changed:
+Added let total = 0; at the top (before anything else).
+Changed num to innerArray for the first .forEach, because you're looping through arrays, not numbers yet.
+Added a second .forEach to go into the numbers inside each inner array.
+Used total += num; to actually add each number to total.
+Removed sum, because you don't need it.
+
+✅ If you only wanted to fix the absolute minimum, you could even keep your num name and just do this:
+
+let total = 0;
+
+numArrays.forEach((num) => {
+    num.forEach((n) => {
+        total += n;
+    });
+});
 
 console.log('Exercise 15 result:\n', total);
+(Just renamed carefully and added the missing parts.)
+
+
+Would you also like me to show what would happen if you tried .flat() inside your original broken setup? (It would have made it work with almost no changes 🔥)
+
+You said:
+YES
+
+ChatGPT said:
+Perfect — here’s how you could have used .flat() inside your original setup and made it super simple:
+
+🔵 Starting from your broken idea:
+You were trying to do:
+
+numArrays.forEach((num) => {
+    num + num;
+});
+const total = sum;
+console.log('Exercise 15 result:\n', total);
+🔵 With .flat(), you can flatten the whole thing first:
+
+let total = 0;
+
+numArrays.flat().forEach((num) => {
+    total += num;
+});
+
+console.log('Exercise 15 result:', total);
+
+✅ What’s happening:
+numArrays.flat() → turns all the nested arrays into one single array of numbers:
+[100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90]
+
+.forEach((num) => { ... }) → now you can loop straight over the numbers, no need for a second loop.
+
+total += num; → adds each number correctly.
+
+✅ This fixes your original idea almost instantly:
+
+Only one .forEach.
+
+No confusion about nested arrays.
+
+Only need let total = 0 at the top.
+
+In short:
+→ .flat() lets you skip needing two loops.
+→ It flattens the array once, so you can treat it like a normal list of numbers.
+
+
+Would you like a super crazy one-line version too, using .flat() and .reduce() together? (Just for fun to see how compact pros might write it!) 🚀⚡
+
+You said:
+YES
+
+ChatGPT said:
+Awesome — here’s the crazy clean one-line version using .flat() and .reduce() together:
+
+const total = numArrays.flat().reduce((sum, num) => sum + num, 0);
+
+console.log('Exercise 15 result:', total);
+
+✅ Breakdown in plain English:
+numArrays.flat() → Smash all the arrays into one big list of numbers.
+.reduce((sum, num) => sum + num, 0) →
+Start at 0.
+For each number (num), add it to the running total (sum).
+const total = → Save the final total.
+
+✅ This does everything:
+Flatten the nested arrays
+Add up all the numbers
+Store the result in total
+All in one line.
+
+How it flows:
+Step	sum	num	New sum
+1	0	100	100
+2	100	5	105
+3	105	23	128
+...	...	...	...
+Final	...	90	(final total)
+Would you also want a version without arrow functions (using regular function syntax)? You might like it if you're practicing both ways! ✏️🚀
+
+You said:
+yes
+
+ChatGPT said:
+Perfect — here’s the same one-line version, but using regular function syntax (no arrow functions):
+
+const total = numArrays.flat().reduce(function(sum, num) {
+  return sum + num;
+}, 0);
+
+console.log('Exercise 15 result:', total);
+✅ Same steps happening:
+numArrays.flat() → flatten into one list.
+.reduce(function(sum, num) { return sum + num; }, 0) →
+Start at 0.
+For each number, add it to the total (sum).
+
+The only difference:
+Instead of (sum, num) => sum + num,
+You write function(sum, num) { return sum + num; }.
+✅ Result is exactly the same.
+*/
