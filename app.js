@@ -583,6 +583,62 @@ You need to: 1. Get only the last array from numArrays.
 
 // console.log('Exercise 13 result:', numList);
 
+// numArrays.length - 1 gives you the last index.
+//numArrays[numArrays.length - 1] gets the last array without changing anything.
+
+// --------
+
+/*Explanation of above equation:
+const numList = numArrays[numArrays.length - 1];
+
+const →
+You are creating a new variable.
+It will be called numList.
+
+numList →
+This is the name of the new variable.
+It will hold/storeInMemory the last array from numArrays.
+Example: numList will become [7, 81, 90] in your code.
+
+= →
+Means assign whatever is on the right side into numList.
+
+numArrays →
+This is the array you're getting something from.
+It’s the big array with all the nested arrays inside.
+
+[ ] →
+Square brackets mean you are accessing an item by its index.
+You will put the index number inside the brackets.
+
+numArrays.length →
+.length gives the total number of items inside numArrays.
+In your example, numArrays.length is 4.
+
+numArrays.length - 1 →
+You subtract 1 because arrays start at 0.
+(Indexes are 0, 1, 2, 3 — not 1, 2, 3, 4.)
+
+So 4 - 1 = 3. You get index 3, which is the last array.
+
+Full together:
+Create a new variable to store the last array from numArrays.
+Go inside numArrays,
+Look at index 3 (the last one),
+Save it into numList.
+
+// --------
+
+/*AN ALTERNATE WAY TO COMPLETE THE EXERCISE:
+const numList = numArrays.at(-1);
+
+console.log('Exercise 13 result:', numList);
+
+Quick note:
+.at(-1) directly grabs the last item in the array.
+No need to use .length - 1.
+.at(-1) is easier to read! */
+
 //--------------------------------------------------------------------------
 
 /*
