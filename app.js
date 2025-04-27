@@ -395,21 +395,39 @@ In the end, you will have three arrays: fizz, buzz, and fizzbuzz, each holding d
 */
 
 //EXERCISE 12 - COMPLETED BELOW:
-// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90,1];
+// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90,1]; //This ✅ creates an array of numbers called nums.
 // const fizz = []; //If the number can be divided by 3 with no remainder, add it to a new array called fizz.
 // const buzz = []; //If the number can be divided by 5 with no remainder, add it to a new array called buzz.
 // const fizzbuzz = []; //If the number can be divided by both 3 and 5, also add it to a third array called fizzbuzz.
+// ✅ Create three empty arrays:
+// fizz: numbers divisible by 3.
+// buzz: numbers divisible by 5.
+// fizzbuzz: numbers divisible by both 3 and 5.
 
-// for (let i=0; i<nums.length; i++) {
-//     const num = nums [i];
-//     const divThree = num % 3 === 0;
-//     const divFive = num % 5 === 0;
-//     const divThreeFive = num % 3 === 0 && num % 5 === 0;
-//     // num % 3 == 0 is the operator used for dividing with no remainder
 
-//     // console.log('divThree', divThree);
-//     // console.log('divFive', divFive);
-//     // console.log(divThreeFive, 'divThreeFive');
+// for (let i=0; i<nums.length; i++) { //✅ i starts at 0 and loops through every index in nums.
+//     const num = nums [i]; //✅ Get the current number from nums and save it into num.
+//     const divThree = num % 3 === 0; // ✅ Check if num divides evenly by 3 (no remainder). If yes, divThree is true.
+//     const divFive = num % 5 === 0; ✅ Check if num divides evenly by 5. If yes, divFive is true.
+//     const divThreeFive = num % 3 === 0 && num % 5 === 0; ✅ Check if num divides evenly by both 3 and 5. 
+//                                                             divThreeFive is true only if both divThree and divFive are true.
+    // num % 3 == 0 is the operator used for dividing with no remainder
+    num % 3 == 0 
+✅ This checks if num divides evenly by 3.
+% is the modulus operator → it gives you the remainder after division.
+num % 3 == 0 means: if dividing num by 3 leaves no remainder (meaning it divides perfectly).
+
+Example:
+
+9 % 3 == 0 → true (9 ÷ 3 = 3, remainder 0)
+
+10 % 3 == 0 → false (10 ÷ 3 = 3 remainder 1)
+
+
+
+    // console.log('divThree', divThree);
+    // console.log('divFive', divFive);
+    // console.log(divThreeFive, 'divThreeFive');
 
 //     if (divThreeFive){
 //         fizz.push(num);
@@ -423,17 +441,17 @@ In the end, you will have three arrays: fizz, buzz, and fizzbuzz, each holding d
 //         console.log(`Number ${nums[i]} is invalid for these search parameters. Pick a new number. Try again... or game over! ;)`);
 //     }
     
-//         // Below is my first attempt at if... else / Found out that it works best if divThreeFive first and use the most/more specific variable first
-// //     if (i === divThree) {
-// //         fizz.push(num);
-// //     } else if (i === divFive){
-// //         buzz.push(num);
-// //     } else if (i === divThree && divFive){
-// //         fizz.push(num);
-// //         buzz.push(num);
-// //     }else{
-// //         console.log("No number will be added to these arrays.")
-// //     }
+        // Below is my first attempt at if... else / Found out that it works best if divThreeFive first and use the most/more specific variable first
+//     if (i === divThree) {
+//         fizz.push(num);
+//     } else if (i === divFive){
+//         buzz.push(num);
+//     } else if (i === divThree && divFive){
+//         fizz.push(num);
+//         buzz.push(num);
+//     }else{
+//         console.log("No number will be added to these arrays.")
+//     }
 // }
 
 // console.log('Exercise 12 Results:');
