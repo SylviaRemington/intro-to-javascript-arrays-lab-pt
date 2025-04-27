@@ -405,16 +405,71 @@ In the end, you will have three arrays: fizz, buzz, and fizzbuzz, each holding d
 //     const divFive = num % 5 === 0; ✅ Check if num divides evenly by 5. If yes, divFive is true.
 //     const divThreeFive = num % 3 === 0 && num % 5 === 0; ✅ Check if num divides evenly by both 3 and 5. 
 //                                                             divThreeFive is true only if both divThree and divFive are true.
+    // num % 3 === 0 is the operator used for dividing with no remainder
+//     num % 3 == 0 
+// ✅ This checks if num divides evenly by 3.
+// % is the modulus operator → it gives you the remainder after division.
+// num % 3 == 0 means: if dividing num by 3 leaves no remainder (meaning it divides perfectly).
+// Example:
+// 9 % 3 == 0 → true (9 / 3 = 3, remainder 0)
+// 10 % 3 == 0 → false (10 / 3 = 3 remainder 1)
+
+//This same process goes for 3, 5, and then combines the two with 3 and 5 (in the code I wrote).
+
+    // console.log('divThree', divThree);
+   //  ✅ Prints whether divThree is true or false. Shows if the number is divisible by 3.
+
+    // console.log('divFive', divFive);
+//     ✅ Prints whether divFive is true or false. Shows if the number is divisible by 5.
+
+    // console.log(divThreeFive, 'divThreeFive');
+   //  ✅ Prints whether divThreeFive is true or false. Shows if the number is divisible by both 3 and 5 at the same time.
+
+//     if (divThreeFive){ //✅ If the number can be divided by both 3 and 5 with no remainder...
+//         fizz.push(num);
+//         buzz.push(num);
+//         fizzbuzz.push(num);
+// ✅ Then, Add the number to all three arrays: fizz  buzz  fizzbuzz
+
+//     }else if(divThree){ //✅ Otherwise, if the number only divides by 3...
+//         fizz.push(num); //✅ Add it to the fizz array.
+
+//     }else if(divFive){ //✅ Otherwise, if the number only divides by 5...
+//         buzz.push(num); //✅ Add it to the buzz array.
+
+//     }else{ //✅ Otherwise (if it divides by neither 3 nor 5)...
+//         console.log(`Number ${nums[i]} is invalid for these search parameters. Pick a new number. Try again... or game over! ;)`);
+//     } //✅ Print a message saying this number doesn’t fit any rule.
+    
+        // Below is my first attempt at if... else / Found out that it works best if divThreeFive first and use the most/more specific variable first
+//     if (i === divThree) {
+//         fizz.push(num);
+//     } else if (i === divFive){
+//         buzz.push(num);
+//     } else if (i === divThree && divFive){
+//         fizz.push(num);
+//         buzz.push(num);
+//     }else{
+//         console.log("No number will be added to these arrays.")
+//     }
+// }
+// console.log('Exercise 12 Results:');
+// console.log('  fizz:', fizz);
+// console.log('  buzz:', buzz);
+// console.log('  fizzbuzz:', fizzbuzz);
+
+// EXERCISE 12 COMPLETED
+// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90,1];
+// const fizz = []; //If the number can be divided by 3 with no remainder, add it to a new array called fizz.
+// const buzz = []; //If the number can be divided by 5 with no remainder, add it to a new array called buzz.
+// const fizzbuzz = []; //If the number can be divided by both 3 and 5, also add it to a third array called fizzbuzz.
+
+// for (let i=0; i<nums.length; i++) {
+//     const num = nums [i];
+//     const divThree = num % 3 === 0;
+//     const divFive = num % 5 === 0;
+//     const divThreeFive = num % 3 === 0 && num % 5 === 0;
     // num % 3 == 0 is the operator used for dividing with no remainder
-    num % 3 == 0 
-✅ This checks if num divides evenly by 3.
-% is the modulus operator → it gives you the remainder after division.
-num % 3 == 0 means: if dividing num by 3 leaves no remainder (meaning it divides perfectly).
-Example:
-9 % 3 == 0 → true (9 ÷ 3 = 3, remainder 0)
-10 % 3 == 0 → false (10 ÷ 3 = 3 remainder 1)
-
-
 
     // console.log('divThree', divThree);
     // console.log('divFive', divFive);
@@ -429,26 +484,8 @@ Example:
 //     }else if(divFive){
 //         buzz.push(num);
 //     }else{
-//         console.log(`Number ${nums[i]} is invalid for these search parameters. Pick a new number. Try again... or game over! ;)`);
+//         console.log(Number ${nums[i]} is invalid for these search parameters. Pick a new number. Try again... or game over! ;));
 //     }
-    
-        // Below is my first attempt at if... else / Found out that it works best if divThreeFive first and use the most/more specific variable first
-//     if (i === divThree) {
-//         fizz.push(num);
-//     } else if (i === divFive){
-//         buzz.push(num);
-//     } else if (i === divThree && divFive){
-//         fizz.push(num);
-//         buzz.push(num);
-//     }else{
-//         console.log("No number will be added to these arrays.")
-//     }
-// }
-
-// console.log('Exercise 12 Results:');
-// console.log('  fizz:', fizz);
-// console.log('  buzz:', buzz);
-// console.log('  fizzbuzz:', fizzbuzz);
 
 //--------------------------------------------------------------------------
 
