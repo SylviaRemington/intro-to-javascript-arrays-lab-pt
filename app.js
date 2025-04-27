@@ -489,6 +489,58 @@ In the end, you will have three arrays: fizz, buzz, and fizzbuzz, each holding d
 
 //--------------------------------------------------------------------------
 
+//Working with two-dimensional arrays. Information below from lesson:
+
+/*
+
+Working with two-dimensional arrays
+You’ve worked with one-dimensional arrays a lot already. Here’s one:
+
+const oneDArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+One-dimensional arrays may be written split across multiple lines if the contents don’t fit on one line or if it enhances readability. For example:
+
+const oneDArray = [
+  1, // 0 index
+  2, // 1 index
+  3, // 2 index
+  and so on
+]
+This changes nothing about the array. It only changes how we write it.
+
+__________________________
+
+A two-dimensional array is essentially an array of arrays. The inner arrays are referred to as nested arrays. This creates a structure similar to a grid or a table.
+
+const twoDArray = [
+  [1, 2, 3], 
+  [4, 5, 6],
+  [7, 8, 9]
+];
+In a one-dimensional array, you access elements using a single index. For example, to access the number 3 in oneDArray above, you would use oneDArray[2].
+In a two-dimensional array, you use two indices: The first specifies the specific array (row), and the second specifies the element in that array (column). To access the number 3 in twoDArray above, you would use twoDArray[0][2]. See more below.
+
+
+const twoDArray = [
+  [1, 2, 3], // index 0
+  [4, 5, 6], // index 1
+  [7, 8, 9]  // index 2
+];
+And finally, below, we see the indexes of the elements inside of the nested arrays:
+
+
+const twoDArray = [
+  [1, 2, 3], // index 0
+// 0  1  2
+  [4, 5, 6], // index 1
+// 0  1  2
+  [7, 8, 9]  // index 2
+// 0  1  2
+];
+
+*/ 
+
+//--------------------------------------------------------------------------
+
 /*
 Exercise 13: Retrieve the Last Array
 
