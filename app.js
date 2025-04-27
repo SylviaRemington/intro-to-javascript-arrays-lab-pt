@@ -744,6 +744,12 @@ numArrays.forEach(function(individualArray) {
 console.log('Exercise 15 result:\n', total);
 
 
+
+
+
+
+
+
 /*Double checking my work with chatgpt and asking if correct. This is its answer:
 
 const numArrays = [ ... ];
