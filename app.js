@@ -354,9 +354,11 @@ Here's what the exercise is asking — in plain language:
 // Finally, prints the list of all odd numbers.
 
 // This is the code for Exercise 11 all in one place:
+// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+// const odds = [];
 // for (let i = 0; i < nums.length; i++) {
 //        const oddNumber = nums[i] % 2 !== 0
-//        console.log(nums[i]);//just printing every number in array so taking that out
+//        console.log(nums[i]);
 //        if (oddNumber){
 //            odds.push(nums[i]);
 //        }
