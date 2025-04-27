@@ -671,6 +671,8 @@ Then print num to show the result.
 
 // console.log('Exercise 14 result:', num);
 
+//Re-reviewed --easy peasy
+
 
 //--------------------------------------------------------------------------
 
